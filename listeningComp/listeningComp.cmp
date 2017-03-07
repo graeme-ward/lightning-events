@@ -9,7 +9,7 @@
     <!-- cannot put a name on the handler for an application event, even though a name must be used on registration -->
     <aura:handler event="c:appEvt" action="{!c.appEvtHandler}" />
 
-    <h1>Handler Component</h1>
+    <h1>Final Handler Component</h1>
 
     <p class="{!v.compEvtTrue ? '' : 'inactive'}">Then "{!v.compEvtOutput}" is passed here from parent component</p>
 

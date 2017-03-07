@@ -14,13 +14,13 @@
 
     <p class="{!v.bubbleEvtTrue ? '' : 'inactive'}">"{!v.bubbleEvtOutput}" is captured here during the bubble phase</p>
 
-    <!-- Example of component nexted directly on component -->
-<!--     <div class="talker">
+    <!-- Example of component nested directly on component -->
+<!--     <div class="event-source">
         <c:talkingComp />
     </div> -->
 
     <!-- Example of components nested on parent and called on child -->
-    <div class="talker">
+    <div class="event-source">
         {!v.body}
     </div>
 

@@ -23,20 +23,20 @@
     display: none;
 }
 
-.THIS .bubble-comp {
+.THIS .middle-parent {
     width: 750px;
     padding: 50px;
     margin: 50px auto 0;
     border: 2px solid green;
 }
 
-.THIS .talker {
+.THIS .event-source {
     border: 2px solid blue;
     margin: 0 auto;
     width: 500px;
 }
 
-.THIS .listener {
+.THIS .final-handler {
     padding: 50px;
     border: 2px solid red;
     margin: 50px auto;
