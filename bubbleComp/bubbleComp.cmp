@@ -1,0 +1,27 @@
+<aura:component >
+    <aura:attribute name="bubbleEvtOutput" type="String" />
+    <aura:attribute name="bubbleEvtTrue" type="Boolean" />
+    <aura:attribute name="captureEvtOutput" type="String" />
+    <aura:attribute name="captureEvtTrue" type="Boolean" />
+
+    <!-- component event handler for bubble phase -->
+    <!-- Must use includeFacets attribute, do not need to define phase as bubble is the default phase -->
+    <!-- <aura:handler name="compEvtName" event="c:compEvt" action="{!c.bubbleEvtHandler}" includeFacets="true"/> -->
+
+    <!-- component event handler for capture phase -->
+    <!-- Must define phase="capture" -->
+    <!-- <aura:handler name="compEvtName" event="c:compEvt" action="{!c.captureEvtHandler}" includeFacets="true" phase="capture"/> -->
+
+    <p class="{!v.bubbleEvtTrue ? '' : 'inactive'}">"{!v.bubbleEvtOutput}" is captured here during the bubble phase</p>
+
+<!--     <div class="talker">
+        <c:talkingComp />
+    </div> -->
+
+    <div class="talker">
+        {!v.body}
+    </div>
+
+    <p class="{!v.captureEvtTrue ? '' : 'inactive'}">"{!v.captureEvtOutput}" is captured here during the capture phase</p>
+
+</aura:component>

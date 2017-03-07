@@ -1,0 +1,5 @@
+<aura:event type="COMPONENT">
+
+    <aura:attribute name="compEvtInput" type="String" />
+
+</aura:event>

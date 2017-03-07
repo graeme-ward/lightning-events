@@ -1,0 +1,24 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name="compEvtInput" type="String" />
+    <aura:attribute name="appEvtInput" type="String" />
+
+    <!-- register events -->
+    <!-- name attribute must be the same on the registration and handler for component events -->    
+    <aura:registerEvent name="compEvtName" type="c:compEvt" />
+
+    <!-- name is required on application event registration, but it is not used -->
+    <aura:registerEvent name="appEvtName" type="c:appEvt" />
+
+    <h1>Event Source Component</h1>
+
+    <ui:inputText class="input"
+                placeholder="Component Event Input"
+                value="{!v.compEvtInput}" />
+    <ui:button class="button" press="{!c.fireCompEvt}" label="Fire Component Event" />
+
+    <ui:inputText class="input"
+                placeholder="Application Event Input"
+                value="{!v.appEvtInput}" />
+    <ui:button class="button" press="{!c.fireAppEvt}" label="Fire Application Event" />
+
+</aura:component>
